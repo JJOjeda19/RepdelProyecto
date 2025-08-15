@@ -1,0 +1,55 @@
+---
+// L A Y O U T
+
+// CONFIGURACION
+
+import '../styles/global.css'
+import Encabezado from "../components/Encabezado.astro";
+import PiedePagina from '../components/PiedePagina.astro';
+---
+
+<!-- CODIGO -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+		<Encabezado/>
+		<main>
+			<slot/>
+		</main>
+		
+		<PiedePagina/>
+	</body>
+</html>
+
+<style>
+	
+	body {
+		height: 100vh;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+	}
+	body main {
+		flex-grow: 1;
+	}
+</style>
+
+<script>
+	import Lenis from 'lenis'
+	// Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+// Listen for the scroll event and log the event data
+lenis.on('scroll', (e) => {
+  console.log(e);
+});
+</script>

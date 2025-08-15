@@ -1,0 +1,54 @@
+---
+// C O M P O N E N T E   P I E   D E   P A G I N A
+
+// HERRAMIENTAS
+import Layout from '../layouts/Layout.astro';
+import Tarjeta from '../components/Tarjeta.astro';
+import { Icon } from 'astro-icon/components'
+---
+
+<!-- CODIGO -->
+<footer>
+    <div class="pie-pagina">
+        <ul>
+            <li>Derechos Reservados 2025 © MusicVerse-X - RIF J-00000000-0</li>
+        </ul>
+        <div>                             
+            <Tarjeta
+				el_icono="line-md:twitter"		
+				titulo="@MusicVerseX.twitter" 
+			/>                
+        </div>
+        <div>
+            <Tarjeta
+				el_icono="line-md:instagram"		
+				titulo="@MusicVerseX.instagram" 
+			/>         
+        </div>
+        <div>                            
+            <Tarjeta
+				el_icono="mdi:whatsapp"				
+				titulo="+58 412.443.03.59" 
+			/>
+        </div>        
+    </div>
+</footer>
+
+<!-- ESTILOS -->
+<style>
+.pie-pagina {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;   
+    font-size: 12px;    	
+	color: white;
+    background-color:darkmagenta;
+}
+.contacto {
+	display: flex;
+	justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+}
+</style>

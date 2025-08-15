@@ -1,0 +1,293 @@
+---
+// P A G I N A   G A L E R I A   D E   I M A G E N E S
+
+// CONFIGURACION
+import Layout from "../layouts/Layout.astro";
+import Tarjeta from "../components/TarjetaMusica.tsx";
+import CurrentSong from "../components/CurrentSong.tsx";
+import Caratula01 from "../assets/Caratulas/acdc.jpg";
+import Caratula02 from "../assets/Caratulas/bonjovi.jpg";
+import Caratula03 from "../assets/Caratulas/collectivesoul.jpg";
+import Caratula04 from "../assets/Caratulas/defleppard.jpg";
+import Caratula05 from "../assets/Caratulas/fleetwoodmac.jpg";
+import Caratula06 from "../assets/Caratulas/greenday.jpg";
+import Caratula07 from "../assets/Caratulas/inxs.jpg";
+import Caratula08 from "../assets/Caratulas/journey.jpg";
+import Caratula09 from "../assets/Caratulas/marillion.jpg";
+import Caratula10 from "../assets/Caratulas/nirvana.jpg";
+import Caratula11 from "../assets/Caratulas/oasis.jpg";
+import Caratula12 from "../assets/Caratulas/pearljam.jpg";
+import Caratula13 from "../assets/Caratulas/queen.jpg";
+import Caratula14 from "../assets/Caratulas/rush.jpg";
+import Caratula15 from "../assets/Caratulas/tearsforfears.jpg";
+import Caratula16 from "../assets/Caratulas/thecure.jpg";
+import Caratula17 from "../assets/Caratulas/vanhalen.jpg";
+import Caratula18 from "../assets/Caratulas/yes.jpg";
+---
+
+<!-- CODIGO -->
+<Layout>
+	<!-- Slider main container -->
+	<div class="swiper">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula01.src}
+						interprete="AC/DC"
+						cancion="Back in black"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula02.src}
+						interprete="Bon Jovi"
+						cancion="Bad Medicine"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula03.src}
+						interprete="Collective Soul"
+						cancion="Heavy"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula04.src}
+						interprete="Def Leppard"
+						cancion="Photograph"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula05.src}
+						interprete="Fleetwood Mac"
+						cancion="Seven Wonders"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula06.src}
+						interprete="Green Day"
+						cancion="Time of your Life"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula07.src}
+						interprete="Inxs"
+						cancion="Suicide Blonde"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula08.src}
+						interprete="Journey"
+						cancion="Don't Stop Believe"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula09.src}
+						interprete="Marillion"
+						cancion="Cover my Eyes (Pain and Heaven)"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula10.src}
+						interprete="Nirvana"
+						cancion="Lithium"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula11.src}
+						interprete="Oasis"
+						cancion="Wonderwall"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula12.src}
+						interprete="Pearl Jam"
+						cancion="Do the Evolution"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula13.src}
+						interprete="Queen"
+						cancion="Bohemian Rhapsody"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula14.src}
+						interprete="Rush"
+						cancion="Subdivisions"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula15.src}
+						interprete="Tears for Fears"
+						cancion="Everybody Wants to Rule the World"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula16.src}
+						interprete="The Cure"
+						cancion="Boys don't Cry"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula17.src}
+						interprete="Van Halen"
+						cancion="Jump"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="cada-cancion">
+					<Tarjeta
+						portada={Caratula18.src}
+						interprete="Yes"
+						cancion="Owner of a Lonely Heart"
+						botonplay="mdi:play-pause"
+						client:visible
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- If we need pagination -->
+	<div class="swiper-pagination"></div>
+
+	<!-- If we need navigation buttons -->
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+
+	<!-- If we need scrollbar -->
+	<div class="swiper-scrollbar"></div>
+
+	<CurrentSong></CurrentSong>
+</Layout>
+
+<!-- ESTILOS CODIGO CSS -->
+<style>
+	Layout {
+		background-color: khaki;
+	}
+	.cada-cancion {
+		/*text-shadow: 1px 1px 1px darkslategray;*/
+	}
+</style>
+
+<!-- CODIGO JAVA-SCRIPT -->
+<script>
+	// core version + navigation, pagination modules:
+	import Swiper from "swiper";
+	import { Navigation, Pagination } from "swiper/modules";
+	// import Swiper and modules styles
+	import "swiper/css";
+	import "swiper/css/navigation";
+	import "swiper/css/pagination";
+
+	// init Swiper:
+	const swiper = new Swiper(".swiper", {
+		// configure Swiper to use modules
+		modules: [Navigation, Pagination],
+		// Optional parameters
+		direction: "horizontal",
+		loop: true,
+
+		// If we need pagination
+		pagination: {
+			el: ".swiper-pagination",
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+
+		// And if we need scrollbar
+		scrollbar: {
+			el: ".swiper-scrollbar",
+		},
+		slidesPerView: 4,
+	});
+</script>

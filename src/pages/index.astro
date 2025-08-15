@@ -1,0 +1,51 @@
+---
+// P A G I N A   H O M E 
+
+// CONFIGURACION 
+import Layout from '../layouts/Layout.astro';
+import Mbanner from '../assets/Fotos-Pagina/LogoMusicX.jpg'
+---
+
+<!-- CODIGO -->
+<Layout>
+	<div class="pantalla-inicio">
+		<div>
+			<h1 class="tituloh1">
+				Musicverse-X
+			</h1>
+			<h2 class="tituloh2">
+				Musica de la Generacion X
+			</h2>
+		</div>
+		<div>
+			<img src={Mbanner.src} alt="" width={340}>
+		</div>
+	</div>	
+</Layout>
+
+<!-- ESTILOS -->
+<style>
+.pantalla-inicio {
+	display: flex;
+	justify-content: space-between;
+	background-color:rgb(251, 251, 251);
+}
+.tituloh1 {
+	font-size: 60px;
+	font-weight: bolt;
+	padding: 0px 20px;
+}
+.tituloh2 {
+	display: flex;
+	justify-content: space-between;
+	font-size: 30px;
+	font-weight: bolt;
+	color: darkslategrey;
+	padding: 0px 20px;
+}
+img {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	padding: 20px;
+}
+</style>
