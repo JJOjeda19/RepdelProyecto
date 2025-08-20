@@ -22,15 +22,15 @@ function TarjetaMusica({ cancion }: Props) {
         <div className="flex flex-col items-center text-center">
             <img src={cancion.image.url} alt=""
                 style={{
-                    width: 300,
-                    height: 300,
+                    width: 250,
+                    height: 250,
                     padding: 10,
                     objectFit: "cover"
                 }} />
 
             <h2 style={{                    
                     fontWeight: 400,
-                    fontSize: 24                   
+                    fontSize: 20                   
                 }}>
                 {cancion.author}</h2>
 
@@ -39,15 +39,14 @@ function TarjetaMusica({ cancion }: Props) {
                     fontSize: '14px',
                     opacity: 0.90,
                     /*lineHeight: '5px',*/
-                    marginTop: '1px',
-                    marginBottom: '1px'
+                    /*marginTop: '0px',*/
                 }}>
                 {cancion.title}</h3>
 
             <button style={{
                         cursor: "pointer",
                         fontSize: 32,
-                        marginTop: '1px',
+                        /*marginTop: '1px',*/
                     }}
                 onClick={el_click}>
                 {
